@@ -6,10 +6,10 @@
   --normal-font: 400;
   --bold-font: 700;
   --bolder-font: 900;
-  --bg-color: #fcfcfc;
-  --primary-color: #4756df;
+  --bg-color: #293c4f;
+  --primary-color: #f0f0f4;
   --secondary-color: #ff7235;
-  --primary-shadow: #8b8eaf;
+  --primary-shadow: #d0d3f4;
   --secondary-shadow: #a17a69;
   --bottom-margin: 0.5rem;
   --bottom-margin-2: 1rem;
@@ -27,6 +27,8 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: #293c4f;
+  color: var(--primary-shadow);
 }
 
 ul {
@@ -35,7 +37,7 @@ ul {
 
 a {
   text-decoration: none;
-  color: var(--primary-color);
+  color: var(--primary-shadow);
 }
 
 a:hover {
@@ -56,15 +58,16 @@ nav {
   justify-content: space-between;
   padding: 1.5rem 3.5rem;
   background-color: var(--bg-color);
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); */
+  box-shadow: 0px 2px 15px 2px var(--primary-shadow);
 }
 
 nav h1 {
-  color: var(--primary-color);
+  color: var(--primary-shadow);
 }
 
 nav a {
-  color: var(--primary-color);
+  color: var(--primary-shadow);
   transition: var(--transition);
 }
 nav a:hover {
@@ -82,10 +85,97 @@ nav ul li {
 }
 
 .burger-menu {
-  color: var(--primary-color);
+  color: var(--primary-shadow);
   font-size: 2rem;
   border: 0;
   background-color: transparent;
   cursor: pointer;
   display: none;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20rem;
+  max-width: 68.75rem;
+  margin: auto;
+  margin-top: 6rem;
+}
+
+.hero img {
+  height: 30.5rem;
+  width: 16.5rem;
+  box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+}
+
+.bio {
+  width: 25rem;
+  padding: 0.625rem;
+  border-radius: 6px;
+  box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+}
+
+.bio h1 {
+  margin-bottom: var(--bottom-margin);
+}
+
+.bio p {
+  line-height: var(--line-height);
+  padding: 0.3rem 0;
+}
+
+.more-about {
+  background-color: var(--bg-color);
+  padding: 1rem 6rem;
+  margin-top: 3rem;
+}
+
+.more-about h2 {
+  margin-bottom: var(--bottom-margin);
+  text-align: center;
+}
+
+.more-about p {
+  line-height: var(--line-height);
+  padding: 0.4rem;
+}
+
+.skills {
+  max-width: 68.75rem;
+  margin: auto;
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.skill-header {
+  margin-bottom: 1rem;
+}
+
+.skills-wrapper img {
+  padding: 1.25rem;
+}
+
+.icon {
+  width: 11.875rem;
+  height: 11.25rem;
+}
+
+.icon-card {
+  background-color: var(--bg-color);
+  border-radius: 11px;
+  box-shadow: 0 3px 10px var(--primary-shadow);
+  padding: 20px;
+  margin: 10px;
+}
+
+.projects {
+  background-color: var(--bg-color);
+  padding: 32px 0;
+  margin-top: 2rem;
+}
+
+.project-pic {
+  width: 65%;
+  height: 60%;
 }
