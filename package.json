@@ -1,0 +1,11 @@
+{
+  "name": "fardis-portfolio",
+  "version": "1.0.0",
+  "description": "![fardis-amouzadeh](jane-shot.png)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Fardis Amouzadeh",
+  "license": "ISC"
+}
