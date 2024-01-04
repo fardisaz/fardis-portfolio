@@ -99,13 +99,13 @@ nav ul li {
   gap: 20rem;
   max-width: 68.75rem;
   margin: auto;
-  margin-top: 6rem;
 }
 
 .hero img {
   height: 30.5rem;
   width: 16.5rem;
   box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+  margin-top: 6rem;
 }
 
 .bio {
@@ -372,8 +372,9 @@ footer {
 }
 @media screen and (max-width: 420px) {
   .hero img {
-    height: 37.5rem;
-    width: 23rem;
+    margin-top: 6rem;
+    height: 33rem;
+    width: 18.5rem;
   }
 
   .bio {
